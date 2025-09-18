@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .container {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main Container -->
+    <div class="container mx-auto p-8 bg-white rounded-xl shadow-lg border border-gray-200">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Smart Attendance System</h1>
+            <p class="text-lg text-gray-600">Automated attendance using face recognition</p>
+        </header>
+
+        <!-- Project Overview -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Project Overview</h2>
+            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                <p class="text-gray-700">This system is designed to automate attendance management, eliminating manual record-keeping and preventing proxy attendance. It uses face recognition technology to accurately identify students and update attendance records in real-time. This project was developed as a part of our Bachelor of Engineering program.</p>
+            </div>
+        </section>
+
+        <!-- Team Information -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Team Members</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <li class="bg-gray-100 p-4 rounded-lg flex items-center space-x-4">
+                    <span class="text-2xl" role="img" aria-label="student icon">🧑‍🎓</span>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Ms. Pavithra G</h3>
+                        <p class="text-sm text-gray-500">1CD21CS106</p>
+                    </div>
+                </li>
+                <li class="bg-gray-100 p-4 rounded-lg flex items-center space-x-4">
+                    <span class="text-2xl" role="img" aria-label="student icon">🧑‍🎓</span>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Ms. Noor Hafsa</h3>
+                        <p class="text-sm text-gray-500">1CD21CS102</p>
+                    </div>
+                </li>
+                <li class="bg-gray-100 p-4 rounded-lg flex items-center space-x-4">
+                    <span class="text-2xl" role="img" aria-label="student icon">🧑‍🎓</span>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Ms. Spoorthi SV</h3>
+                        <p class="text-sm text-gray-500">1CD21CS158</p>
+                    </div>
+                </li>
+                <li class="bg-gray-100 p-4 rounded-lg flex items-center space-x-4">
+                    <span class="text-2xl" role="img" aria-label="student icon">🧑‍🎓</span>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Ms. Gauri Sharma</h3>
+                        <p class="text-sm text-gray-500">1CD21CS052</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Live View & Status Section -->
+        <section class="text-center mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Live Attendance Feed</h2>
+            <div id="video-container" class="w-full bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+                <!-- A video stream from the webcam would be embedded here -->
+                <p class="p-8 text-gray-500">Webcam feed and face recognition will be displayed here.</p>
+                <p class="p-2 text-sm text-gray-500">To connect this to your Python script, you would use a web framework like Flask or Django to serve this page and stream the video feed.</p>
+            </div>
+            <div id="status-message" class="mt-4 text-lg font-medium text-gray-800">
+                Status: System is ready.
+            </div>
+        </section>
+
+        <!-- Buttons for interaction (placeholder) -->
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all duration-300">Start System</button>
+            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all duration-300">Stop System</button>
+            <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all duration-300">View Attendance Log</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
