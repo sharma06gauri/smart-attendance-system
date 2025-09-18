@@ -1,7 +1,3 @@
-Perfect 👍 I’ll draft a **GitHub README.md** for your project directly based on your final report so you can just copy-paste it into your repository. Here’s a polished version:
-
----
-
 # Smart Attendance System using Face Recognition
 
 ## 📌 Overview
