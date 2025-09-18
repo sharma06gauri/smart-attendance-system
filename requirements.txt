@@ -1,0 +1,15 @@
+```
+flask
+opencv-python
+numpy
+pandas
+scikit-learn
+joblib
+```
+
+⚡ Optional (if you want extra tools that you might have used during development):
+
+```
+matplotlib
+jupyter
+```
